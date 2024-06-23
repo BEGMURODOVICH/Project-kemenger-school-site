@@ -1,0 +1,697 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 0 88px;
+}
+
+
+/* style for navigation-container*/
+
+.navigation-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 32px;
+}
+
+.navigation-container,
+.navigation-content {
+    display: flex;
+    gap: 60px;
+    margin-right: 10px;
+}
+
+.navigation-content li a {
+    font-family: Commissioner;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.57px;
+    color: #000000;
+}
+
+.phone-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    z-index: 1;
+}
+
+.phone-container a {
+    font-family: Commissioner;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22.01px;
+    color: #000000;
+}
+
+
+/* style for hero-container */
+
+.hero-container {
+    height: 798px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('../img/hero-bg1.png'), url('../img/hero-bg2.png'), url('../img/hero-bg3.png'), url('../img/hero-bg4.png'), url('../img/hero-bg5.png'), url('../img/hero-bg6.png');
+    background-repeat: no-repeat;
+    background-position: 398px 0px, 55px 50px, 161px 576px, 476px 511px, 700px 172px, 708px 510px;
+}
+
+.hero-container .hero-content {
+    width: 697px;
+}
+
+.hero-container img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.hero-content h2 {
+    font-family: Commissioner;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 58.7px;
+    color: #000000;
+}
+
+.hero-content h2 span {
+    font-family: Commissioner;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 58.7px;
+    color: rgb(45, 139, 206);
+}
+
+.hero-content p {
+    padding-top: 44px;
+    font-family: Commissioner;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29.35px;
+    color: #000000;
+    width: 532px;
+}
+
+.hero-container .hero-content button {
+    margin-top: 44px;
+    padding: 19px 43px 21px;
+    border-radius: 30px;
+    background: #FAE01A;
+    font-family: Commissioner;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24.46px;
+    border: none;
+}
+
+
+/* for style section-lesson-content */
+
+.lesson li p {
+    width: 459px;
+    font-family: Commissioner;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29.35px;
+    color: #000000;
+    margin-left: 120px;
+}
+
+.people-content p {
+    position: absolute;
+    right: 80px;
+    bottom: 40px;
+}
+
+.people-content {
+    position: relative;
+}
+
+.lesson {
+    display: flex;
+    flex-direction: column;
+    gap: 83px;
+    padding-bottom: 40px;
+}
+
+.lesson:nth-child(1) {
+    background-image: url('../img/svg/круг.svg'), url('../img/svg/yellow-box.svg'), url('../img/svg/line.svg');
+    background-repeat: no-repeat;
+    background-position: 75px 0px, 150px 46px, 750px 30px;
+}
+
+.lesson li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.section-lesson-content {
+    background-image: url('../img/svg/krug1.svg'), url('../img/svg/line.svg');
+    background-repeat: no-repeat;
+    background-position: 1270px 570px, 100px 460px;
+}
+
+
+/* for style section-course */
+
+.course-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    gap: 75px;
+    width: 1100px;
+    padding-top: 107px;
+    padding-bottom: 60px;
+}
+
+.course-container ul li {
+    text-align: center;
+}
+
+.course-container ul li h3 {
+    font-family: Commissioner;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29.35px;
+    color: #000000;
+    padding-top: 4px;
+}
+
+.top-the-group {
+    margin-bottom: 36px;
+}
+
+.course-content1 li {
+    width: 140px;
+}
+
+.course-content1 {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 30px;
+}
+
+.course-content2 {
+    width: 373px;
+    margin-top: 100px;
+}
+
+.course-content3 {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.course1 {
+    align-self: flex-end;
+}
+
+.course2 {
+    align-self: flex-start;
+}
+
+.course3 {
+    align-self: flex-end;
+}
+
+.course4 {
+    align-self: flex-start;
+}
+
+.course5 {
+    align-self: flex-end;
+}
+
+.course6 {
+    align-self: flex-start;
+}
+
+
+/* for style section-catalog */
+
+.section-catalog {
+    position: relative;
+    background-color: #F6FAFF;
+    background-image: url('../img/svg/catalog-sircle1.svg'), url('../img/svg/catalog-sircle2.svg');
+    background-repeat: no-repeat;
+    background-position: 72px 194px, 1050px 136px;
+}
+
+.catalog {
+    padding: 71px 0 80px;
+}
+
+.catalog h2 {
+    font-family: Commissioner;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 58.7px;
+    text-align: center;
+    padding-bottom: 68px;
+}
+
+.catalog-cards {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.card1 {
+    width: 390px;
+    padding: 0 0 60px;
+    border-radius: 40px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 52px 34px -27px #E1E1E126;
+}
+
+.card1 h3 {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    text-align: center;
+    padding: 26px 0;
+    width: 100%;
+    font-family: Commissioner;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.35px;
+    color: #FFFFFF;
+    background: #018FA3;
+}
+
+.card1 p {
+    font-family: Commissioner;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 58.7px;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 24px;
+}
+
+.card1 ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.card1 ul li a {
+    font-family: Commissioner;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29.35px;
+    color: #000000;
+}
+
+.card1 ul li:nth-child(3) {
+    padding-top: 52px;
+}
+
+.card1 ul li:nth-child(7) a {
+    color: #018FA3;
+    padding-top: 5px;
+}
+
+.btn1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+}
+
+.btn1 button {
+    cursor: pointer;
+    font-family: Commissioner;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29.35px;
+    color: #FFFFFF;
+    padding: 19px 60px 20px;
+    border-radius: 40px;
+    background: #018FA3;
+    border: none;
+}
+
+.card2 h3 {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    text-align: center;
+    padding: 26px 0;
+    width: 100%;
+    font-family: Commissioner;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.35px;
+    color: #FFFFFF;
+    background: #955EEA;
+}
+
+.card2 p {
+    font-family: Commissioner;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 58.7px;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 24px;
+}
+
+.card2 {
+    background-color: #FFFFFF;
+}
+
+.card2 ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.card2 ul li a {
+    font-family: Commissioner;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29.35px;
+    color: #000000;
+}
+
+.card2 ul li:nth-child(3) {
+    padding-top: 52px;
+}
+
+.card2 ul li:nth-child(7) a {
+    color: #018FA3;
+    padding-top: 5px;
+}
+
+.btn2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+}
+
+.btn2 button {
+    cursor: pointer;
+    font-family: Commissioner;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29.35px;
+    color: #FFFFFF;
+    padding: 19px 60px 20px;
+    border-radius: 40px;
+    background: #955EEA;
+    border: none;
+}
+
+.card3 {
+    background-color: #FFFFFF;
+}
+
+.card3 h3 {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    text-align: center;
+    padding: 26px 0;
+    width: 100%;
+    font-family: Commissioner;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.35px;
+    color: #FFFFFF;
+    background: #4ECA30;
+}
+
+.card3 p {
+    font-family: Commissioner;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 58.7px;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 24px;
+}
+
+.card3 ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.card3 ul li a {
+    font-family: Commissioner;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29.35px;
+    color: #000000;
+}
+
+.card3 ul li:nth-child(3) {
+    padding-top: 52px;
+}
+
+.card3 ul li:nth-child(1) {
+    padding-top: 35px;
+}
+
+.card3 ul li:nth-child(6) a {
+    color: #018FA3;
+    padding-top: 5px;
+}
+
+.btn3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+}
+
+.btn3 button {
+    cursor: pointer;
+    font-family: Commissioner;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29.35px;
+    color: #FFFFFF;
+    padding: 19px 60px 20px;
+    border-radius: 40px;
+    background: #4ECA30;
+    border: none;
+}
+
+.left-btn {
+    cursor: pointer;
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    border: none;
+    background-color: transparent;
+}
+
+.right-btn {
+    cursor: pointer;
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    border: none;
+    background-color: transparent;
+}
+
+
+/* style for section-certificat */
+
+.certificat-img {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-certificat {
+    background-image: url('../img/svg/sertificat-circle1.svg'), url('../img/svg/sertificat-circle2.svg'), url('../img/svg/sertificat-circle3.svg'), url('../img/svg/sertificat-circle4.svg');
+    background-repeat: no-repeat;
+    background-position: 39px 405px, 0px 81px, 0 68px, 1300px 286px;
+}
+
+.certificat h2 {
+    font-family: Commissioner;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 58.7px;
+    text-align: center;
+    color: #000000;
+    padding-bottom: 60px;
+}
+
+.certificat {
+    padding: 60px 0 130px;
+}
+
+
+/* style for section-feedback */
+
+.section-feedback {
+    position: relative;
+}
+
+.feedback {
+    padding-bottom: 71px;
+}
+
+.feedback h2 {
+    font-family: Commissioner;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 58.7px;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.feedback ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.feedback ul li {
+    width: 387px;
+    border: 4px solid #018FA3;
+    border-radius: 30px;
+    padding: 36px 24px 36px 36px;
+}
+
+.feedback ul li p {
+    font-family: Commissioner;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.46px;
+    color: #000000;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 12px;
+}
+
+.user h4 {
+    font-family: Commissioner;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29.35px;
+    color: #000000;
+}
+
+
+/* style for section-contact */
+
+.contact {
+    background-image: url('../img/svg/special.png'), url('../img/svg/contact-circle2.svg'), url('../img/svg/contact-circle3.svg'), url('../img/svg/contact-circle4.svg'), url('../img/svg/contact-circle5.svg');
+    background-repeat: no-repeat;
+    background-position: 34px 215px, 130px 1000px, 110px 990px, 905px 1161px, 900px 1150px;
+    padding-top: 205px;
+    padding-bottom: 87px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: end;
+    gap: 57px 120px;
+}
+
+.contact-content {
+    width: 590px;
+    padding: 15px 42px 40px;
+    border-radius: 30px;
+    background: #018FA3;
+    box-shadow: 0px 50px 50px -27px #0000001A;
+}
+
+.contact-content h3 {
+    font-family: Commissioner;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 58.7px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-bottom: 20px;
+}
+
+.contact-content ul li h5 {
+    font-family: Commissioner;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29.35px;
+    text-align: left;
+    color: #FFFFFF;
+    padding-bottom: 8px;
+}
+
+.contact-content ul li {
+    padding-bottom: 20px;
+}
+
+.contact-content ul li a {
+    font-family: Commissioner;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29.35px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.contact-content ul li p {
+    font-family: Commissioner;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29.35px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+
+/* style for foot */
+
+footer {
+    padding: 56px 0;
+    background: #0A2530;
+}
+
+.foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-navigation {
+    display: flex;
+    gap: 40px;
+}
+
+.footer-navigation li a {
+    font-family: Commissioner;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29.35px;
+    text-align: left;
+    color: #FFFFFF;
+}
